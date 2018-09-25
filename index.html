@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css" />
+
+
+    <title>Developer Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            Objective: Build a CodePen.io app that is functionally similar to this:
+            <a href="https://codepen.io/freeCodeCamp/full/VPaoNP" target="_blank"> Click Here</a> .
+        </p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+                    <div class="row">
+                        <div class="labels">
+                            <label id="name-label" for="name">* Name: </label>
+                        </div>
+                        <div class="right">
+                            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label id="email-label" for="email">* Email: </label>
+                        </div>
+                        <div class="right">
+                            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label id="number-label" for="age">* Age: </label>
+                        </div>
+                        <div class="right">
+                            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label for="currentPos">Which option best describes your current role?</label>
+                        </div>
+                        <div class="right">
+                            <select id="dropdown" name="currentPos" class="dropdown">
+                                <option disabled value>Select an option</option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="learner">Full Time Learner</option>
+                                <option value="preferNo">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                        </div>
+                        <div class="right">
+                            <ul style="list-style: none;">
+                                <li class="radio">
+                                    <label>Definitely
+                                        <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                                    </label>
+                                </li>
+                                <li class="radio">
+                                    <label>Maybe
+                                        <input name="radio-buttons" value="2" type="radio" class="userRatings">
+                                    </label>
+                                </li>
+                                <li class="radio">
+                                    <label>Not sure
+                                        <input name="radio-buttons" value="3" type="radio" class="userRatings">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label for="most-like">What do you like most in FCC: </label>
+                        </div>
+                        <div class="right">
+                            <select id="most-like" name="mostLike" class="dropdown">
+                                <option disabled selected value>Select an option</option>
+                                <option value="challenges">Challenges</option>
+                                <option value="projects">Projects</option>
+                                <option value="community">Community</option>
+                                <option value="openSource">Open Source</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label for="preferences">Things that should be improved in the future
+                                <br>(Check all that apply): </label>
+                        </div>
+                        <div class="right">
+                            <ul id="preferences" style="list-style: none;">
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labels">
+                            <label for="comments">Any Comments or Suggestions?</label>
+                        </div>
+                        <div class="right">
+                            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
